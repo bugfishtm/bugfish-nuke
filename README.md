@@ -4,6 +4,19 @@
 
 A Windows tool for emergency privacy: instantly deletes sensitive data and active logins to protect my information during unexpected searches or house warrants.
 
+> ⚠️ Its not planned to enhance this script, its just saved here for my private purpose and its just a project to serve my needs. You need to compile it in visual studio, no working executable is included.
+
+The software does the following:
+1. Close Nextcloud if running.
+2. Delete Nextcloud Logins
+3. Close Steam if running.
+4. Delete Steam Logins
+5. Close Telegram if running.
+6. Delete Telegram Logins
+7. Delete confident folders
+8. Clear the Trash Bin
+9. Restart the Computer
+
 ## 📑 Changelog Information
 
 There is no changelog monitoring in this repository.
