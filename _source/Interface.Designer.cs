@@ -192,7 +192,7 @@
             label7.Name = "label7";
             label7.Size = new Size(93, 23);
             label7.TabIndex = 4;
-            label7.Text = "Version 1.3";
+            label7.Text = "Version 1.4";
             // 
             // pictureBox1
             // 

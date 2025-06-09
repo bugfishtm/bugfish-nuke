@@ -98,46 +98,65 @@ namespace bugfish_nuke
             // Pre Configured Database Items
             var initialItems = new[]
             {
-                new { Name = "Brave: Close and Delete User Data", Shortcode = "brave" },
-                new { Name = "Cyberduck: Close and Delete User Data", Shortcode = "cyberduck" },
-                new { Name = "Discord: Close and Delete User Data", Shortcode = "discord" },
-                new { Name = "Dropbox: Close and Delete User Data", Shortcode = "dropbox" },
-                new { Name = "Edge: Close and Delete User Data", Shortcode = "edge" },
-                new { Name = "FileZilla: Close and Delete User Data", Shortcode = "filezilla" },
-                new { Name = "Google Chrome: Close and Delete User Data", Shortcode = "chrome" },
-                new { Name = "ICQ: Close and Delete User Data", Shortcode = "icq" },
-                new { Name = "KeePass: Close and Delete User Data", Shortcode = "keepass" },
-                new { Name = "Microsoft Outlook: Close and Delete User Data", Shortcode = "outlook" },
-                new { Name = "Microsoft Teams: Close and Delete User Data", Shortcode = "teams" },
-                new { Name = "Mozilla Firefox: Close and Delete User Data", Shortcode = "firefox" },
-                new { Name = "Nextcloud: Close and Delete User Data", Shortcode = "nextcloud" },
-                new { Name = "OneDrive: Close and Delete User Data", Shortcode = "onedrive" },
-                new { Name = "Opera: Close and Delete User Data", Shortcode = "opera" },
-                new { Name = "Opera GX: Close and Delete User Data", Shortcode = "operagx" },
-                new { Name = "Signal: Close and Delete User Data", Shortcode = "signal" },
-                new { Name = "Skype: Close and Delete User Data", Shortcode = "skype" },
-                new { Name = "Slack: Close and Delete User Data", Shortcode = "slack" },
-                new { Name = "Steam: Close and Delete User Data", Shortcode = "steam" },
-                new { Name = "Telegram: Close and Delete User Data", Shortcode = "telegram" },
-                new { Name = "Thunderbird: Close and Delete User Data", Shortcode = "thunderbird" },
-                new { Name = "Tor Browser: Close and Delete User Data", Shortcode = "tor" },
-                new { Name = "VeraCrypt: Close and Delete User Data", Shortcode = "veracrypt" },
-                new { Name = "Viber: Close and Delete User Data", Shortcode = "viber" },
-                new { Name = "Vivaldi: Close and Delete User Data", Shortcode = "vivaldi" },
-                new { Name = "WhatsApp: Close and Delete User Data", Shortcode = "whatsapp" },
-                new { Name = "Windows Authenticator App: Close and Delete User Data", Shortcode = "winauth" },
-                new { Name = "WinSCP: Close and Delete User Data", Shortcode = "winscp" },
-                new { Name = "Windows: Clear Trash Bin", Shortcode = "windows_trash" },
-                new { Name = "Windows: Clear Explorer Most Recently Used List", Shortcode = "windows_explorer_mru" },
-                new { Name = "Windows: Clear DNS Cache", Shortcode = "windows_dns_cache" },
-                new { Name = "Windows: Clear Event Logs", Shortcode = "windows_event_logs" },
-                new { Name = "Windows: Clear Clipboard", Shortcode = "windows_clipboard" },
-                new { Name = "Windows: Clear Explorer Thumbnail Cache", Shortcode = "windows_thumbnail_cache" },
-                new { Name = "Windows: Delete User SSH Key Folder", Shortcode = "securekey-ssh" },
-                new { Name = "Windows: Delete BitLocker Recovery Keys", Shortcode = "securekey-bitlocker" },
-                new { Name = "Windows: Delete User EFS Keys", Shortcode = "securekey-efs-user" },
-                new { Name = "Windows: Delete machine-level crypto-keys", Shortcode = "securekey-machine" },
-                new { Name = "Zoom: Close and Delete User Data", Shortcode = "zoom" }
+                new { Name = "[Software] Brave: Close and Delete User Data", Shortcode = "brave" },
+                new { Name = "[Software] Cyberduck: Close and Delete User Data", Shortcode = "cyberduck" },
+                new { Name = "[Software] Discord: Close and Delete User Data", Shortcode = "discord" },
+                new { Name = "[Software] Dropbox: Close and Delete User Data", Shortcode = "dropbox" },
+                new { Name = "[Software] Edge: Close and Delete User Data", Shortcode = "edge" },
+                new { Name = "[Software] FileZilla: Close and Delete User Data", Shortcode = "filezilla" },
+                new { Name = "[Software] Google Chrome: Close and Delete User Data", Shortcode = "chrome" },
+                new { Name = "[Software] ICQ: Close and Delete User Data", Shortcode = "icq" },
+                new { Name = "[Software] KeePass: Close and Delete User Data", Shortcode = "keepass" },
+                new { Name = "[Software] Microsoft Outlook: Close and Delete User Data", Shortcode = "outlook" },
+                new { Name = "[Software] Microsoft Teams: Close and Delete User Data", Shortcode = "teams" },
+                new { Name = "[Software] Mozilla Firefox: Close and Delete User Data", Shortcode = "firefox" },
+                new { Name = "[Software] Mozilla Thunderbird: Close and Delete User Data", Shortcode = "thunderbird" },
+                new { Name = "[Software] Native Access: Close and Delete User Data", Shortcode = "nativeaccess" },
+                new { Name = "[Software] Nextcloud: Close and Delete User Data", Shortcode = "nextcloud" },
+                new { Name = "[Software] OneDrive: Close and Delete User Data", Shortcode = "onedrive" },
+                new { Name = "[Software] OBS: Close and Delete User Data", Shortcode = "obs" },
+                new { Name = "[Software] Opera: Close and Delete User Data", Shortcode = "opera" },
+                new { Name = "[Software] Opera GX: Close and Delete User Data", Shortcode = "operagx" },
+                new { Name = "[Software] Signal: Close and Delete User Data", Shortcode = "signal" },
+                new { Name = "[Software] Skype: Close and Delete User Data", Shortcode = "skype" },
+                new { Name = "[Software] Slack: Close and Delete User Data", Shortcode = "slack" },
+                new { Name = "[Software] Steam: Close and Delete User Data", Shortcode = "steam" },
+                new { Name = "[Software] Telegram: Close and Delete User Data", Shortcode = "telegram" },
+                new { Name = "[Software] Tor Browser: Close and Delete User Data", Shortcode = "tor" },
+                new { Name = "[Software] Unity Hub: Close and Delete User Data", Shortcode = "unityhub" },
+                new { Name = "[Software] VeraCrypt: Close and Delete User Data", Shortcode = "veracrypt" },
+                new { Name = "[Software] Viber: Close and Delete User Data", Shortcode = "viber" },
+                new { Name = "[Software] Vivaldi: Close and Delete User Data", Shortcode = "vivaldi" },
+                new { Name = "[Software] WhatsApp: Close and Delete User Data", Shortcode = "whatsapp" },
+                new { Name = "[Software] WinSCP: Close and Delete User Data", Shortcode = "winscp" },
+                new { Name = "[Software] Zoom: Close and Delete User Data", Shortcode = "zoom" },
+                new { Name = "[Windows] Authenticator: Close and Delete Data", Shortcode = "winauth" },
+                new { Name = "[Windows] BitLocker Recovery Keys: Delete", Shortcode = "securekey-bitlocker" },
+                new { Name = "[Windows] Clipboard: Clear", Shortcode = "windows_clipboard" },
+                new { Name = "[Windows] DirectX Shader Cache: Clear", Shortcode = "windows_directx_shader_cache" },
+                new { Name = "[Windows] DNS Cache: Clear", Shortcode = "windows_dns_cache" },
+                new { Name = "[Windows] Driver Install Logs: Clear", Shortcode = "windows_driver_install_logs" },
+                new { Name = "[Windows] Explorer: Clear Most Recently Used List", Shortcode = "windows_explorer_mru" },
+                new { Name = "[Windows] Explorer: Clear Thumbnail Cache", Shortcode = "windows_thumbnail_cache" },
+                new { Name = "[Windows] Event Logs: Clear", Shortcode = "windows_event_logs" },
+                new { Name = "[Windows] Error Reporting: Clear", Shortcode = "windows_error_reporting" },
+                new { Name = "[Windows] Event Trace Logs: Clear", Shortcode = "windows_event_trace_logs" },
+                new { Name = "[Windows] Machine-Level Crypto-Keys: Delete", Shortcode = "securekey-machine" },
+                new { Name = "[Windows] Font Cache: Clear", Shortcode = "windows_font_cache" },
+                new { Name = "[Windows] Log Files: Clear", Shortcode = "windows_log_files" },
+                new { Name = "[Windows] Memory Dumps: Clear", Shortcode = "windows_memory_dumps" },
+                new { Name = "[Windows] Office: Recent File History", Shortcode = "office-recent-files" },
+                new { Name = "[Windows] Prefetch Data: Clear", Shortcode = "windows_prefetch" },
+                new { Name = "[Windows] System Restore Points: Clear", Shortcode = "windows_system_restore_cleanup" },
+                new { Name = "[Windows] Recent Documents List: Clear", Shortcode = "windows_recent_documents" },
+                new { Name = "[Windows] Recent File List: Clear", Shortcode = "windows_recent" },
+                new { Name = "[Windows] Trash Bin: Clear", Shortcode = "windows_trash" },
+                new { Name = "[Windows] User SSH Key Folder: Delete", Shortcode = "securekey-ssh" },
+                new { Name = "[Windows] User EFS Keys: Delete", Shortcode = "securekey-efs-user" },
+                new { Name = "[Windows] Update Cache: Clear", Shortcode = "windows_update_cleanup" },
+                new { Name = "[Windows] User Assist History: Clear", Shortcode = "windows_userassist" },
+                new { Name = "[Windows] Web Cache: Clear", Shortcode = "windows_webcache" },
+                new { Name = "[Windows] WebDav Cache: Clear", Shortcode = "windows_webdav_cache" },
             }
             .OrderBy(x => x.Name) // Optional: ensures the list is sorted by Name
             .ToArray();
@@ -168,20 +187,6 @@ namespace bugfish_nuke
             this.Paint += new PaintEventHandler(Interface_Paint);
             //this.Resize += Interface_Resize;
 
-            // Create and configure ContextMenuStrip
-            // contextMenuStrip = new ContextMenuStrip();
-            // contextMenuStrip.Items.Add("Show", null, (s, e) => { this.Show(); this.WindowState = FormWindowState.Normal; notifyIcon.Visible = true; });
-            // contextMenuStrip.Items.Add("Exit", null, (s, e) => { Application.Exit(); });
-
-            // Create and configure NotifyIcon
-            // notifyIcon = new NotifyIcon
-            // {
-            //     Icon = new Icon(new MemoryStream(Properties.Resources.nukeicon)),
-            //     Visible = true,
-            //     ContextMenuStrip = contextMenuStrip
-            // };
-            // notifyIcon.MouseDoubleClick += NotifyIcon_MouseDoubleClick;
-
             LoadItems();
             listBoxActive.DoubleClick += listBoxActive_DoubleClick;
             listBoxInactive.DoubleClick += listBoxInactive_DoubleClick;
@@ -202,25 +207,7 @@ namespace bugfish_nuke
         {
             if (!IsAdministrator())
             {
-                // Restart the application with admin rights
-                var proc = new ProcessStartInfo
-                {
-                    UseShellExecute = true,
-                    WorkingDirectory = Environment.CurrentDirectory,
-                    FileName = Application.ExecutablePath,
-                    Verb = "runas" // This triggers the UAC prompt
-                };
-
-                try
-                {
-                    Process.Start(proc);
-                }
-                catch
-                {
-                    // User refused the elevation
-                    MessageBox.Show("Administrator permissions are required to continue.", "Permission Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
+                MessageBox.Show("Administrator permissions are required to continue.", "Permission Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit(); // Close the current instance
             }
         }
@@ -1207,6 +1194,151 @@ namespace bugfish_nuke
                         }
                     }
 
+                    if (row["Shortcode"].Equals("unityhub"))
+                    {
+                        textBox1.Text = "Erasing Unity Hub temp, cache, and log files...";
+                        KillProcesses("Unity Hub");
+
+                        // 1. Unity Hub cache and data directory
+                        string unityHubDir = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                            "Unity Hub"
+                        );
+                        if (Directory.Exists(unityHubDir))
+                        {
+                            foreach (var file in Directory.GetFiles(unityHubDir, "*.*", SearchOption.AllDirectories))
+                            {
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                            }
+                        }
+
+                        // 2. Unity Hub logs directory
+                        string unityHubLogs = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                            "Unity Hub"
+                        );
+                        if (Directory.Exists(unityHubLogs))
+                        {
+                            foreach (var file in Directory.GetFiles(unityHubLogs, "*.*", SearchOption.AllDirectories))
+                            {
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                            }
+                        }
+
+                        // 3. Temp files (optional, if you want to catch temp files with UnityHub in the name)
+                        string tempDir = Path.GetTempPath();
+                        foreach (var file in Directory.GetFiles(tempDir, "UnityHub*.*"))
+                        {
+                            await SecureDeleteFileAsync(file, overwrite_passes);
+                        }
+                    }
+
+
+                    if (row["Shortcode"].Equals("nativeaccess"))
+                    {
+                        textBox1.Text = "Erasing Native Access temp files...";
+                        KillProcesses("Native Access");
+                        KillProcesses("NativeAccess"); // Sometimes the process name varies
+
+                        // 1. Delete files in Native Access cache (if you know the path)
+                        // Example path (may vary by version and installation):
+                        string nativeAccessCache = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                            "Native Instruments", "Native Access"
+                        );
+                        if (Directory.Exists(nativeAccessCache))
+                        {
+                            foreach (var file in Directory.GetFiles(nativeAccessCache, "*.*", SearchOption.AllDirectories))
+                            {
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                            }
+                        }
+
+                        // 2. Delete files in the Windows temp folder that match Native Access patterns
+                        string tempDir = Path.GetTempPath();
+                        foreach (var file in Directory.GetFiles(tempDir, "NativeAccess*.*"))
+                        {
+                            await SecureDeleteFileAsync(file, overwrite_passes);
+                        }
+
+                        // 3. Optionally: Delete Native Access logs (if you want to remove all traces)
+                        string nativeAccessLogs = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                            "Native Instruments", "Native Access", "logs"
+                        );
+                        if (Directory.Exists(nativeAccessLogs))
+                        {
+                            foreach (var file in Directory.GetFiles(nativeAccessLogs))
+                            {
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                            }
+                        }
+                    }
+
+                    if (row["Shortcode"].Equals("office-recent-files"))
+                    {
+                        textBox1.Text = "Erasing Microsoft Office temp and recent file entries...";
+
+                        // Delete Office temp files
+                        string tempDir = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                            "Microsoft", "Office", "16.0", "OfficeFileCache"
+                        );
+                        if (Directory.Exists(tempDir))
+                        {
+                            foreach (var file in Directory.GetFiles(tempDir))
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                        }
+
+                        // Delete recent file shortcuts
+                        string recentDir = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                            "Microsoft", "Office", "Recent"
+                        );
+                        if (Directory.Exists(recentDir))
+                        {
+                            foreach (var file in Directory.GetFiles(recentDir))
+                                await SecureDeleteFileAsync(file, overwrite_passes);
+                        }
+                    }
+
+                    if (row["Shortcode"].Equals("obs"))
+                    {
+                        textBox1.Text = "Erasing OBS login and sensitive data...";
+                        KillProcesses("obs");        // For OBS Studio
+                        KillProcesses("obs64");      // For older OBS Studio versions
+                        KillProcesses("obs32");      // Rarely needed
+                        KillProcesses("obs-virtualcam"); // If you use the virtual camera
+
+                        // Path to OBS user data
+                        string obsDir = Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                            "obs-studio"
+                        );
+
+                        if (Directory.Exists(obsDir))
+                        {
+                            // List of files that may contain login/sensitive data
+                            var sensitiveFiles = new[]
+                            {
+                                Path.Combine(obsDir, "global.ini"),
+                                Path.Combine(obsDir, "basic.ini"),
+                                Path.Combine(obsDir, "service.json") // Newer versions may use this
+                            };
+
+                            foreach (var file in sensitiveFiles)
+                            {
+                                if (File.Exists(file))
+                                    await SecureDeleteFileAsync(file, overwrite_passes);
+                            }
+
+                            // Optionally: Delete the entire 'obs-studio' directory for a full reset
+                            // WARNING: This will delete all OBS settings, scenes, sources, etc.
+                            await SecureDeleteDirectoryAsync(obsDir, overwrite_passes);
+                        }
+                    }
+
+
                     if (row["Shortcode"].Equals("securekey-efs-user"))
                     {
                         textBox1.Text = "Erasing user EFS keys (makes user EFS-encrypted files unrecoverable)...";
@@ -1252,6 +1384,287 @@ namespace bugfish_nuke
                     {
                         textBox1.Text = "Windows: Clearing Trash";
                         SHEmptyRecycleBin(IntPtr.Zero, null, 0x7);
+                    }
+
+                    if (row["Shortcode"].Equals("windows_recent"))
+                    {
+                        textBox1.Text = "Windows: Clearing Recent Files List";
+                        string recentPath = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
+                        await Task.Run(() =>
+                        {
+                            foreach (var file in Directory.GetFiles(recentPath))
+                            {
+                                try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_prefetch"))
+                    {
+                        textBox1.Text = "Windows: Clearing Prefetch Folder";
+                        string prefetchPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "Prefetch");
+                        await Task.Run(() =>
+                        {
+                            foreach (var file in Directory.GetFiles(prefetchPath, "*.pf"))
+                            {
+                                try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_log_files"))
+                    {
+                        textBox1.Text = "Windows: Deleting Log Files";
+                        string windir = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                        string logDir = Path.Combine(windir, "Logs");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(logDir))
+                            {
+                                foreach (var file in Directory.GetFiles(logDir, "*.log"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                            // Also delete setup logs in Panther
+                            string pantherDir = Path.Combine(windir, "Panther");
+                            if (Directory.Exists(pantherDir))
+                            {
+                                foreach (var file in Directory.GetFiles(pantherDir, "*.log"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_event_trace_logs"))
+                    {
+                        textBox1.Text = "Windows: Deleting Event Trace Logs";
+                        string windir = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                        string etlDir = Path.Combine(windir, "System32", "LogFiles", "WMI");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(etlDir))
+                            {
+                                foreach (var file in Directory.GetFiles(etlDir, "*.etl"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_font_cache"))
+                    {
+                        textBox1.Text = "Windows: Clearing Font Cache";
+                        string fontCachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"FontCache");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(fontCachePath))
+                            {
+                                foreach (var file in Directory.GetFiles(fontCachePath, "FontCache*.dat"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                            // Also try system-wide cache
+                            string windir = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                            string sysFontCache = Path.Combine(windir, "System32", "FNTCACHE.DAT");
+                            try { SecureDelete.SecureDeleteFile(sysFontCache, 0); } catch { }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_memory_dumps"))
+                    {
+                        textBox1.Text = "Windows: Deleting Memory Dump Files";
+                        string windir = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                        await Task.Run(() =>
+                        {
+                            foreach (var file in new[] { "Memory.dmp", "Minidump.dmp" })
+                            {
+                                string fullPath = Path.Combine(windir, file);
+                                try { SecureDelete.SecureDeleteFile(fullPath, 0); } catch { }
+                            }
+                            // Delete all files in Minidump folder
+                            string minidumpDir = Path.Combine(windir, "Minidump");
+                            if (Directory.Exists(minidumpDir))
+                            {
+                                foreach (var file in Directory.GetFiles(minidumpDir, "*.dmp"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_error_reporting"))
+                    {
+                        textBox1.Text = "Windows: Deleting Windows Error Reporting Files";
+                        string werPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Microsoft\Windows\WER");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(werPath))
+                            {
+                                foreach (var dir in Directory.GetDirectories(werPath))
+                                {
+                                    try { SecureDelete.SecureDeleteDirectory(dir, 0); } catch { }
+                                }
+                                foreach (var file in Directory.GetFiles(werPath))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_userassist"))
+                    {
+                        textBox1.Text = "Windows: Clearing UserAssist History";
+                        await Task.Run(() =>
+                        {
+                            try
+                            {
+                                using (var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist", true))
+                                {
+                                    if (key != null)
+                                    {
+                                        foreach (var subKeyName in key.GetSubKeyNames())
+                                        {
+                                            try { key.DeleteSubKeyTree(subKeyName); } catch { }
+                                        }
+                                    }
+                                }
+                            }
+                            catch { }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_webdav_cache"))
+                    {
+                        textBox1.Text = "Windows: Deleting WebDAV Cache";
+                        string webDavCache = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Microsoft\Windows\WebCache");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(webDavCache))
+                            {
+                                foreach (var file in Directory.GetFiles(webDavCache, "webcache*.dat"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_driver_install_logs"))
+                    {
+                        textBox1.Text = "Windows: Deleting Driver Installation Log Files";
+                        string setupApiLog = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "inf", "setupapi.dev.log");
+                        string setupApiAppLog = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "inf", "setupapi.app.log");
+                        await Task.Run(() =>
+                        {
+                            foreach (var file in new[] { setupApiLog, setupApiAppLog })
+                            {
+                                try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_webcache"))
+                    {
+                        textBox1.Text = "Windows: Deleting WebCache Files";
+                        string webCachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Microsoft\Windows\WebCache");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(webCachePath))
+                            {
+                                foreach (var file in Directory.GetFiles(webCachePath))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_update_cleanup"))
+                    {
+                        textBox1.Text = "Windows: Cleaning up Windows Update Files";
+                        string winSxS = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "WinSxS");
+                        await Task.Run(() =>
+                        {
+                            // StartComponentCleanup via Task Scheduler
+                            var psi = new ProcessStartInfo("schtasks.exe", "/Run /TN \"\\Microsoft\\Windows\\Servicing\\StartComponentCleanup\"")
+                            {
+                                UseShellExecute = false,
+                                CreateNoWindow = true
+                            };
+                            try { Process.Start(psi).WaitForExit(); } catch { }
+                            // Optionally, delete old update logs
+                            string logDir = Path.Combine(winSxS, "ManifestCache");
+                            if (Directory.Exists(logDir))
+                            {
+                                foreach (var file in Directory.GetFiles(logDir, "*.bin"))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_recent_documents"))
+                    {
+                        textBox1.Text = "Windows: Clearing Recent Documents History";
+                        string recentPath = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
+                        await Task.Run(() =>
+                        {
+                            foreach (var file in Directory.GetFiles(recentPath))
+                            {
+                                try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                            }
+                            // Also clear jump lists
+                            string autoDest = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Recent\AutomaticDestinations");
+                            string customDest = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Recent\CustomDestinations");
+                            foreach (var dir in new[] { autoDest, customDest })
+                            {
+                                if (Directory.Exists(dir))
+                                {
+                                    foreach (var file in Directory.GetFiles(dir))
+                                    {
+                                        try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                    }
+                                }
+                            }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_system_restore_cleanup"))
+                    {
+                        textBox1.Text = "Windows: Cleaning up System Restore Points";
+                        await Task.Run(() =>
+                        {
+                            var psi = new ProcessStartInfo("vssadmin", "delete shadows /for=c: /oldest /quiet")
+                            {
+                                UseShellExecute = false,
+                                CreateNoWindow = true
+                            };
+                            try { Process.Start(psi).WaitForExit(); } catch { }
+                        });
+                    }
+
+                    if (row["Shortcode"].Equals("windows_directx_shader_cache"))
+                    {
+                        textBox1.Text = "Windows: Deleting DirectX Shader Cache";
+                        string shaderCachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "D3DSCache");
+                        await Task.Run(() =>
+                        {
+                            if (Directory.Exists(shaderCachePath))
+                            {
+                                foreach (var file in Directory.GetFiles(shaderCachePath))
+                                {
+                                    try { SecureDelete.SecureDeleteFile(file, 0); } catch { }
+                                }
+                            }
+                        });
                     }
 
                 }
@@ -1533,7 +1946,6 @@ namespace bugfish_nuke
                     // 3. Set audio player file
                     if (System.IO.File.Exists(selectedPath))
                     {
-                        // Replace with your actual audio player logic
                         player.Stop();
                         player.SoundLocation = selectedPath;
                     }
