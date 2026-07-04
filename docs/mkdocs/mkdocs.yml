@@ -12,8 +12,8 @@ nav:
     - Warranty: warranty.md
     - Support: support.md
     - License: license.md
-    - Impressum: https://bugfishtm.blogspot.com/2023/05/impressum.html
-    - Privacy: https://bugfishtm.blogspot.com/2023/05/privacy.html
+    - Impressum: https://bugfishtm.github.io/impressum.html
+    - Privacy: https://bugfishtm.github.io/privacy.html
 
 theme:
   name: material
