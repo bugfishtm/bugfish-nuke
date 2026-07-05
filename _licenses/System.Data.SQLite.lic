@@ -1,0 +1,23 @@
+Library:   System.Data.SQLite
+Version:   1.0.118
+Source:    https://system.data.sqlite.org/
+NuGet:     https://www.nuget.org/packages/System.Data.SQLite/
+License:   Public Domain
+
+================================================================================
+
+System.Data.SQLite is an ADO.NET provider for SQLite maintained by the SQLite
+Development Team.
+
+Like the SQLite core it wraps, all of the deliverable code and documentation in
+System.Data.SQLite has been dedicated to the public domain by the authors.
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute the
+original code, either in source code form or as a compiled binary, for any
+purpose, commercial or non-commercial, and by any means.
+
+The authors disclaim copyright to the source code. In place of a legal notice,
+here is a blessing:
+
+    May you do good and not evil.
+    May you find forgiveness for yourself and forgive others.
+    May you share freely, never taking more than you give.
